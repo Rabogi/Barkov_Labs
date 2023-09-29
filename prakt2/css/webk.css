@@ -1,0 +1,14 @@
+.example::-webkit-scrollbar {
+    display: none;
+  }
+.label{
+    color: #ffffff;
+}
+
+.checkbox:hover, .radio:hover {
+    color: #ffffff;
+}
+
+.terms:hover{
+    color: #00a2ff;
+}

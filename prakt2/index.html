@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Service login</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <link rel="stylesheet"
+            href="css\webk.css">
+    </head>
+    <body style="overflow: hidden;" class="example">
+        <div
+            style="background-image: url(bg.jpg); background-attachment:fixed; background-size: cover; height: 100vh;">
+            <section class="section">
+                <div class="container" style="justify-content: center;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: inherit;
+            /* align-content: center; */
+            align-items: center;">
+
+                    <div class="box"
+                        style="width: 30% ; background-color: #211e6b; color:white">
+
+                        <div class="title" style="color: white;">
+                            Service login
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Username</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="text"
+                                    placeholder="Your username"
+                                    value
+                                    id="username">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="email"
+                                    placeholder="Your @mail"
+                                    value
+                                    id="mail">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label class="label">Password</label>
+                            <div class="control has-icons-left has-icons-right">
+                                <input class="input" type="text"
+                                    placeholder="Your password"
+                                    value
+                                    id="password">
+                                <span class="icon is-small is-left">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <span class="icon is-small is-right">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <div class="control">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    I agree to the <a href="#" class="terms">terms
+                                        and
+                                        conditions</a>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field is-grouped"
+                            style="justify-content: space-evenly;">
+                            <div class="control">
+                                <button class="button is-link">Log in</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link">Register</button>
+                            </div>
+                            <div class="control">
+                                <button class="button is-link"
+                                    style="background-color: red;"
+                                    onclick="genData()">Random</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="https://kit.fontawesome.com/6e83e2f4f1.js"
+            crossorigin="anonymous">
+        </script>
+        <script>
+            function genData(event)
+            {
+            let username = document.getElementById("username");
+            username.value = "Default Name";
+            let mail = document.getElementById("mail");
+            mail.value = "Default @mail";
+            let password = document.getElementById("password");
+            password.value = "Default password";
+        }
+        </script>
+    </body>
+</html>
